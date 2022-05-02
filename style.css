@@ -1,44 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Source+Sans+Pro:wght@300&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
 
-.sidebar{
-    background-color: red;
+.sidebar {
+    background-color: rgb(179, 173, 173);
     width: 10vw;
     font-family: 'Radio Canada', sans-serif;
     height: 100vh;
 }
-.sidebar nav{
+
+.sidebar nav {
     padding: 35px;
 }
-.sidebar nav li{
+
+.sidebar nav li {
     list-style: none;
     font-size: 30px;
     padding: 33px 0;
 }
-
-
-.main{
-     background-color: yellow;
-     width: 90vw;
+.sidebar nav li a{
+    text-decoration: none;
 }
 
-.container{
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
     display: flex;
 }
-.infocontainer{
-    background-color: rgb(173, 14, 120);
-    height: 78vh;
+
+.infocontainer {
+    /* background-color: rgb(173, 14, 120); */
+    height: 68vh;
     width: 80vw;
-    margin:144px auto;
+    margin: 144px auto;
+    justify-content: space-around;
     display: flex;
 }
 
-.devpic img{
-    width: 381px;
-    justify-content: space-around;
+.hello {
+    font-size: 75px;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.name {
+    font-size: 54px;
+    font-weight: bold;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.about {
+    font-size: 33px;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.moreabout {
+    font-size: 29px;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.buttons{
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(9, 110, 110);
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: rgb(9, 110, 110);
+}
+.devPic img {
+    height: 68vh;
+    /* padding: 0 499px; */
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
