@@ -10,9 +10,15 @@
 
 .sidebar {
     background-color: rgb(179, 173, 173);
-    width: 434px;
+    /* width: 434px; */
     font-family: 'Radio Canada', sans-serif;
     height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebargo{
+    transform: translate(-433px,0px);
+    position: absolute;
 }
 
 .sidebar nav {
@@ -157,11 +163,75 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-.blogcontainer h1 {
+h1 {
     font-family: 'Fira Sans', sans-serif;
     margin: 23px;   
 }
 
-.blogitem p {
-    font-family: 'Source Code Pro', sans-serif;
+ p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    margin: 12px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.skillcontainer{
+padding: 12px;
+}
+
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+    
+}
+
+.hundread{
+    width: 265px;
+    background-color: violet;
+}
+
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+
+.t5{
+    width: 75px;
+    color: yellowgreen;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 155px;
+}
+
+
+@media (max-width:1615px) {
+    /* *{background-color: rgb(165, 105, 105);} */
+
+    /* .sidebar{
+        transform: translate(-433px,0px);
+        position: absolute;
+    } */
 }
