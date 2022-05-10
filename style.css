@@ -9,6 +9,7 @@
 
 
 .sidebar {
+    position: absolute;
     background-color: rgb(179, 173, 173);
     /* width: 434px; */
     font-family: 'Radio Canada', sans-serif;
@@ -16,10 +17,6 @@
     transition: transform 0.3s ease-in;
 }
 
-.sidebargo{
-    transform: translate(-433px,0px);
-    position: absolute;
-}
 
 .sidebar nav {
     padding: 35px;
@@ -48,7 +45,7 @@
     /* background-color: rgb(173, 14, 120); */
     height: 68vh;
     width: 80vw;
-    margin: 144px auto;
+    margin: 144px 88px;
     justify-content: space-around;
     display: flex;
 }
@@ -117,7 +114,8 @@
 .contactform {
     font-family: 'Radio Canada', sans-serif;
     padding: 0 34px;
-    padding-top: 144px;
+    /* padding-top: 144px; */
+    margin: 0 88px;
 }
 
 .contactform h1 {
@@ -156,7 +154,9 @@
     margin: 3px 0;
 }
 
-
+.blogcontainer{
+    margin: 70px 88px;
+}
 
 .blogitem {
     padding: 12px;
@@ -170,6 +170,11 @@ h1 {
 
  p {
     font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin: 0 88px;
+    margin-top: 100px;
 }
 
 .intro h2{
@@ -222,16 +227,29 @@ padding: 12px;
     left: 10px;
 }
 
+.sidebarGo{
+    transform: translate(-433px,0px);
+    position: absolute;
+}
+
 .cross{
-    margin-left: 155px;
+    margin-left: 179px;
+    padding-top: 10px;
+}
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 
 @media (max-width:1615px) {
-    /* *{background-color: rgb(165, 105, 105);} */
+    /* *{background-color: rgb(165, 105, 105);}  */
 
     /* .sidebar{
         transform: translate(-433px,0px);
         position: absolute;
     } */
+    .devPic{
+        display: none;
+    }
 }
